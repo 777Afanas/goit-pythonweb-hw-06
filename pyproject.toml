@@ -1,0 +1,27 @@
+[project]
+name = "goit-pythonweb-hw-06"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "777Afanas",email = "serhii2111@yahoo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "sqlalchemy (>=2.0.52,<3.0.0)",
+    "alembic (>=1.19.2,<2.0.0)",
+    "psycopg2-binary (>=2.9.12,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "faker (>=40.38.0,<41.0.0)",
+    "ruff (>=0.16.6,<0.17.0)",
+    "black (>=26.5.1,<27.0.0)",
+    "mypy (>=2.3.1,<3.0.0)"
+]
